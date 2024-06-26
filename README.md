@@ -1,7 +1,5 @@
 # Web-Development
 
-# HTML CSS Projects Repository
-
 Welcome to the HTML CSS Projects repository! This repository hosts a collection of web applications and games developed using HTML, CSS, and sometimes JavaScript. Each project demonstrates different functionalities and utilizes APIs for fetching data or enhancing user interaction.
 
 ## Projects Included
