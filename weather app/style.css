@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(211, 210, 210);
+}
+
+.container{
+    background-color: white;
+    width: 60%;
+    min-width: 200px;
+    max-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+#city {
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#submit{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(92, 92, 241);
+    border: none;
+}
+
+#submit:hover{
+    background-color: #e1f1ff;
+    color: black;
+    cursor: pointer;
+}
+
+#submit:active{
+    background: #269aff;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: none;
+}
+
+.temperature, .icon{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.details > div {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 20%;
+    height: 150px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.icon, .temperature, .details{
+    margin-top: 20px;
+}
+
+.icon img {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media(max-width: 1200px){
+    .details{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .details > div{
+        width: 60%;
+        padding: 20px 20px;
+    }
+
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #city, #submit{
+        width: 100%;
+    }
+}

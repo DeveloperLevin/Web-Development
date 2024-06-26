@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Set a background color */
+  }
+  
+  .calculator {
+    width: 300px;
+    border: 2px solid #3498db; /* Set a border color */
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff; /* Set a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    align-items: center;
+  }
+  
+  #display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #3498db; /* Set a border color */
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #3498db; /* Set a background color */
+    color: #ffffff; /* Set text color */
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+  

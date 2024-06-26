@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sketch {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 50%;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #fff;
+    border-right: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+button {
+    width: 6em;
+    padding: 1em;
+    background-color: rgb(254, 254, 190);
+    font-weight: bold;
+}
+
+.screen {
+    width: 50%;
+}
+
+.screen > input {
+    width: 90%;
+}

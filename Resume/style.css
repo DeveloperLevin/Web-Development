@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left-side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+
+.profile-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-text .image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-text .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: roboto, sans-serif;
+}
+
+.profile-text h2 span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.contact-info, .Education-info {
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul, .Education-info ul {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li, .Education-info ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+} 
+
+.contact-info ul li .icon {
+    display: inline-block;
+    width: 25px;
+    color: #03a9f4
+}
+
+.contact-info ul li span{
+    color: #fff;
+    font-weight: 350;
+}
+
+.Education-info ul li {
+    margin-bottom: 15px;
+}
+
+.Education-info h5{
+    color: #03a9f4;
+    font-weight: 500;
+}   
+
+.Education-info h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.Education-info h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.Education-info.Education-info.language .text{
+    color: white;
+}
+
+.Education-info.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081920;
+    display: block;
+    margin-top: 5px;
+}
+
+.Education-info.language .percent div {
+    background: #03a9f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.container .right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 70px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p{
+    color: #333;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year-company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color:#848c99 ;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    background-color: #03a9f4;
+    top: 0;
+    left: 0;
+    height: 100%;
+} 

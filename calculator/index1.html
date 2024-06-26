@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="text" name="display">
+        </div>
+        <div class="keypad">
+            <div class="row">
+                <button class="function">DEL</button>
+                <button class="function">AC</button>
+                <button class="operation" value="%">%</button>
+                <button class="operation" value="/">/</button>
+            </div>
+
+            <div class="row">
+                <button class="number" onclick="addNumtoDisplay(1)">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="operation" value="*">x</button>
+            </div>
+
+            <div class="row">
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="operation" value="-">-</button>
+            </div>
+
+            <div class="row">
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="operation" value="+">+</button>
+            </div>
+
+            <div class="row">
+                <button class="number" value="0">0</button>
+                <button class="function" value="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
