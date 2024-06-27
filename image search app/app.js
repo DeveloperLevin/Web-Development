@@ -1,4 +1,4 @@
-const API_KEY = "-CC856SVGZh8X3qIjgj9SiKfkTKnC11f2Ucyq2rM4H4"
+const API_KEY = "YOUR_API_KEY"
 const formElement = document.querySelector('.form')
 
 const btn = formElement.querySelector('.submit');
