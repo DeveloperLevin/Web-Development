@@ -1,4 +1,4 @@
-const API_KEY = "405731ffa8b8ef8788518936d15aae6b"
+const API_KEY = "YOUR_API_KEY"
 
 const weatherDataElement = document.querySelector('#weather')
 const btn = document.querySelector('#submit')
